@@ -25,16 +25,15 @@
 
 <script>
         function check( ){
-            var username =document.getElementById("username").innerText;
-            var password =document.getElementById("password").innerText;
+            var username =document.getElementById("username").value;
+            var password =document.getElementById("password").value;
             if(!username||username=="")
-           { 
                {alert("邮箱不合法"); 
                 return false;
                 }
-            if(!password||password==""||password.length<=6)
-            alert("错误","密码不合法"); 
-            }
+           else if(!password||password==""||password.length<=6)
+             alert("密码不合法"); 
+            
         }
     </script>
 </head>
